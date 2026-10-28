@@ -2,26 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Privacy Policy for AutoPoster_TMS_bot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoPoster_TMS_bot — Digital Art Publisher</title>
     <style>
-        body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; }
-        h1 { color: #333; }
+        :root {
+            --bg-color: #121214;
+            --card-bg: #1e1e24;
+            --accent-color: #e60023; /* Pinterest Red */
+            --text-color: #f4f4f5;
+            --subtext-color: #a1a1aa;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 650px;
+            width: 100%;
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent-color);
+            margin-bottom: 20px;
+        }
+
+        h1 { margin: 10px 0 5px 0; font-size: 28px; }
+        .tagline { color: var(--subtext-color); font-size: 16px; margin-bottom: 25px; }
+
+        .description {
+            text-align: left;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 20px;
+            border-radius: 12px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            font-size: 15px;
+        }
+
+        .buttons { display: flex; flex-direction: column; gap: 12px; margin-bottom: 30px; }
+
+        .btn {
+            display: block;
+            padding: 14px 20px;
+            background-color: #27272a;
+            color: var(--text-color);
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .btn:hover { background-color: #3f3f46; transform: translateY(-2px); }
+        .btn-primary { background-color: var(--accent-color); }
+        .btn-primary:hover { background-color: #ad001a; }
+
+        footer { font-size: 13px; color: var(--subtext-color); border-top: 1px solid #27272a; padding-top: 20px; }
+        footer a { color: var(--subtext-color); text-decoration: underline; }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy for AutoPoster_TMS_bot App</h1>
-    <p><strong>Effective Date:</strong> October 28, 2026</p>
-    
-    <h2>1. Overview</h2>
-    <p>AutoPoster_TMS_bot is a private automation tool used strictly for personal content management, allowing the owner to cross-post digital artwork and portfolio items to personal social media accounts, including Pinterest.</p>
 
-    <h2>2. Information Collection and Use</h2>
-    <p>AutoPoster_TMS_bot does not collect, store, or process any personal data from third-party users. The application only interacts with the Pinterest API on behalf of the application owner via secure OAuth tokens.</p>
+<div class="container">
+    <!-- Аватарка (положи картинку avatar.png в репозиторий или вставь прямую ссылку) -->
+    <img src="avatar.png" alt="AutoPoster Avatar" class="avatar" onerror="this.src='https://via.placeholder.com/120'">
 
-    <h2>3. Data Storage</h2>
-    <p>No user data, personal info, or sensitive access tokens are shared with external third parties or stored on public servers.</p>
+    <h1>AutoPoster_TMS_bot</h1>
+    <div class="tagline">Automated Portfolio & Art Publishing Tool</div>
 
-    <h2>4. Contact</h2>
-    <p>If you have any questions regarding this Privacy Policy, you can reach out via email: your-email@example.com</p>
+    <div class="description">
+        <h3>🎨 About the Application</h3>
+        <p><strong>AutoPoster_TMS_bot</strong> is a private content-management tool designed to streamline the workflow of digital artists. It allows automated cross-publishing of original artwork, illustrations, and process sketches from a local studio environment directly to connected social media accounts, including Pinterest, Telegram, and Tumblr.</p>
+        
+        <h3>⚡ Key Features</h3>
+        <ul>
+            <li>Automated high-resolution image posting</li>
+            <li>Custom board selection and tag formatting</li>
+            <li>Direct linking back to original art portfolios</li>
+        </ul>
+    </div>
+
+    <!-- Кнопки перехода на твои соцсети -->
+    <div class="buttons">
+        <a href="https://t.me/твой_канал" target="_blank" class="btn">📢 Official Telegram Channel</a>
+        <a href="https://твой_блог.tumblr.com" target="_blank" class="btn">🎨 Tumblr Portfolio</a>
+    </div>
+
+    <footer>
+        <p>© 2026 AutoPoster_TMS_bot. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+</div>
+
 </body>
 </html>
